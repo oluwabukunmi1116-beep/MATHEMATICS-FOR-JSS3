@@ -1,0 +1,118 @@
+    <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f6f1">
+  <meta name="description" content="Practise JSS3 mathematics with syllabus-aligned, original BECE-style questions and worked answers.">
+  <title>Maths Made Easy · JSS3 BECE Practice</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Maths Made Easy home">
+        <span class="brand-mark" aria-hidden="true">∑</span>
+        <span>maths<span class="brand-light">made easy</span></span>
+      </a>
+      <div class="topbar-right">
+        <span class="class-label"><span class="status-dot"></span> JSS3 · BECE PREP</span>
+        <button class="icon-button" id="sound-toggle" type="button" aria-label="Toggle sound effects" title="Toggle sound effects">♫</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> YOUR NEXT MATHS WIN STARTS HERE</div>
+          <h1 id="page-title">Maths gets easier<br>with <span>practice.</span></h1>
+          <p>Build confidence with JSS3 topics, clear worked answers and exam-style practice made for you.</p>
+          <div class="hero-note">
+            <span class="note-icon" aria-hidden="true">✦</span>
+            <span>Original revision questions across core JSS3 topics, in a BECE-style format.<br><strong>These are not verified questions from official 2022–2025 papers.</strong></span>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="math-card card-top"><span>3x + 5 = 20</span><b>?</b></div>
+          <div class="math-card card-bottom"><span>πr²</span><b class="mini-check">✓</b></div>
+          <div class="hero-sun">
+            <span class="sun-rays">✳</span>
+            <span class="sun-face">✎</span>
+          </div>
+          <span class="art-spark spark-a">✦</span>
+          <span class="art-spark spark-b">✳</span>
+        </div>
+      </section>
+
+      <section class="learning-area" aria-label="Practice questions">
+        <aside class="sidebar">
+          <div class="sidebar-heading">
+            <span class="section-kicker">YOUR PRACTICE</span>
+            <span class="progress-label" id="progress-label">0 / 24 done</span>
+          </div>
+          <div class="progress-track" role="progressbar" aria-label="Questions completed" aria-valuemin="0" aria-valuemax="24" aria-valuenow="0">
+            <span id="progress-fill"></span>
+          </div>
+          <nav class="topic-nav" aria-label="Choose a topic">
+            <button type="button" class="topic-button active" data-topic="all">
+              <span class="topic-icon all-icon">✳</span><span>All topics</span><span class="topic-count">24</span>
+            </button>
+            <div class="nav-divider"></div>
+            <span class="nav-caption">JSS3 TOPICS</span>
+            <button type="button" class="topic-button" data-topic="Number"><span class="topic-icon">⅟</span><span>Number &amp; ratio</span><span class="topic-count">5</span></button>
+            <button type="button" class="topic-button" data-topic="Algebra"><span class="topic-icon">x²</span><span>Algebra</span><span class="topic-count">5</span></button>
+            <button type="button" class="topic-button" data-topic="Geometry"><span class="topic-icon">△</span><span>Geometry</span><span class="topic-count">5</span></button>
+            <button type="button" class="topic-button" data-topic="Measure"><span class="topic-icon">◷</span><span>Measurement</span><span class="topic-count">4</span></button>
+            <button type="button" class="topic-button" data-topic="Data"><span class="topic-icon">▥</span><span>Data &amp; chance</span><span class="topic-count">3</span></button>
+            <button type="button" class="topic-button" data-topic="Other"><span class="topic-icon">↗</span><span>Graphs &amp; more</span><span class="topic-count">2</span></button>
+          </nav>
+          <div class="sidebar-tip">
+            <span class="tip-icon" aria-hidden="true">✦</span>
+            <p><strong>Little by little</strong><br>Try a few questions every day. You’ve got this!</p>
+          </div>
+        </aside>
+
+        <section class="practice-panel" aria-live="polite">
+          <div class="panel-topline">
+            <div>
+              <span class="section-kicker" id="section-kicker">LET’S GET STARTED</span>
+              <h2 id="panel-title">Choose your next challenge</h2>
+            </div>
+            <button class="shuffle-button" id="shuffle-button" type="button"><span aria-hidden="true">⤨</span> Mix it up</button>
+          </div>
+
+          <div class="question-card" id="question-card">
+            <div class="question-meta">
+              <span class="topic-pill" id="question-topic">NUMBER &amp; RATIO</span>
+              <span class="question-number" id="question-number">QUESTION 01 <span>·</span> 24</span>
+            </div>
+            <div class="question-text" id="question-text"></div>
+            <div class="answer-list" id="answer-list" role="group" aria-label="Answer choices"></div>
+            <div class="feedback" id="feedback" hidden>
+              <span class="feedback-icon" id="feedback-icon" aria-hidden="true"></span>
+              <div><strong id="feedback-title"></strong><p id="feedback-text"></p></div>
+            </div>
+            <div class="question-footer">
+              <span class="keyboard-hint">Choose an answer to check it</span>
+              <button class="next-button" id="next-button" type="button" disabled>Check answer <span aria-hidden="true">→</span></button>
+            </div>
+          </div>
+
+          <div class="bottom-hint"><span aria-hidden="true">◉</span> Every answer includes a step-by-step explanation.</div>
+        </section>
+      </section>
+    </main>
+    <footer class="footer">
+      <span>Made for curious minds <span class="heart">♥</span></span>
+      <span>JSS3 Mathematics · Learn it. Practise it. Own it.</span>
+    </footer>
+  </div>
+</body>
+</html>
+`
